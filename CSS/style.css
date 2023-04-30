@@ -1,0 +1,1204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: robot, sans-serif;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+.main.dark {
+
+    filter: brightness(50%);
+    user-select: none;
+    pointer-events: none;
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://img2.shaadi.com/assests/2021/images/pressure-hatao-banner-v2.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+header .head {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    padding-top: 4rem;
+
+
+}
+
+header article {
+    padding: 0 300px;
+}
+
+.nav-list {
+    width: 15rem;
+    /* border: 2px solid green; */
+    text-align: center;
+    margin: auto;
+    padding-bottom: 0.8rem;
+}
+
+header .nav-list a {
+    color: #ffff;
+    font-size: 1.4rem;
+    font-weight: 600px;
+    text-decoration: none;
+    padding-right: 1.2rem;
+}
+
+header .nav-list a:hover {
+    text-decoration: underline;
+}
+
+header .nav-list a span {
+    display: inline-block;
+    position: relative;
+    top: .2rem;
+}
+
+header .nav-list .emoji {
+    right: .2rem;
+}
+
+header .content {
+    color: #ffff;
+    margin: auto;
+    text-align: center;
+    margin-top: 5rem;
+    line-height: 3.5rem;
+    padding-top: 10rem;
+}
+
+header .content :first-child {
+    font-size: 2.4rem;
+}
+
+header .content :last-child {
+    font-size: 1.6em;
+}
+
+.form {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 70vw;
+    height: 10rem;
+    margin: auto;
+    margin-top: 1rem;
+    /* border: 2px solid red;  */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form div label {
+    color: #ffff;
+    font-size: 1.1rem;
+    margin-left: .2rem;
+}
+
+header .form span {
+    color: #ffff;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.form select {
+    cursor: pointer;
+    height: 40px;
+    width: 100%;
+    border-radius: 0.4rem;
+    border: none;
+    outline: none;
+}
+
+.form .gender-list,
+.religion-list {
+    width: 10rem;
+}
+
+.form .age-from,
+.age-to {
+    width: 5rem;
+}
+
+.form .language {
+    width: 12rem;
+}
+
+.form .btn {
+    background-color: rgb(0, 188, 213);
+    height: 3rem;
+    width: 10rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 0.4rem;
+    border: none;
+    outline: none;
+    margin-top: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.form .btn:hover {
+    cursor: pointer;
+    background-color: rgb(0, 171, 213);
+    box-shadow: 0 0 5px 0px grey;
+}
+
+.content-heading {
+    color: rgba(248, 29, 29, 0.897);
+    font-size: 2.2rem;
+    margin-top: 2.4rem;
+    text-align: center;
+}
+
+.icon-container {
+    margin-top: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon-container .icon {
+    width: 320px;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon-container .icon .icon-1 {
+    height: 200px;
+    width: 190px;
+    background-image: url('https://img2.shaadi.com/assests/2016/images/home-icon-sprite.png');
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    background-size: cover;
+}
+
+.icon-container .icon .icon-1:hover {
+    background-position: center -211px;
+}
+
+.icon-container .icon .icon-2 {
+    height: 200px;
+    width: 190px;
+    background-image: url('https://img2.shaadi.com/assests/2016/images/home-icon-sprite.png');
+    background-repeat: no-repeat;
+    background-position: center -422px;
+    background-size: cover;
+}
+
+.icon-container .icon .icon-2:hover {
+    background-position: center -634px;
+}
+
+.icon-container .icon .icon-3 {
+    height: 200px;
+    width: 190px;
+    margin-top: 20px;
+    background-image: url('https://img2.shaadi.com/assests/2016/images/home-icon-sprite.png');
+    background-repeat: no-repeat;
+    background-position: center -846px;
+    background-size: cover;
+}
+
+.icon-container .icon .icon-3:hover {
+    background-position: center -1058px;
+}
+
+.icon-container .icon a {
+    color: rgb(0, 188, 213);
+    font-size: 1.5em;
+    display: inline-block;
+    margin-top: 60px;
+    text-decoration: none;
+
+}
+
+.icon-container .icon a:hover {
+    text-decoration: underline;
+}
+
+.icon-container .icon p {
+    font-size: 1em;
+    margin-top: 15px;
+}
+
+.gallery-section {
+    background-color: #eeee;
+}
+
+.gallery-heading {
+    color: rgba(248, 29, 29, 0.897);
+    font-size: 2.8em;
+    text-align: center;
+    margin-top: 50px;
+    padding: 60px;
+}
+
+.gallery-content {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-content div img {
+    height: 210px;
+    width: 320px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.alert-container {
+    background-color: rgba(248, 29, 29, 0.897);
+    width: 100%;
+    height: 100px;
+    margin-top: 90px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.alert-container .alert-content {
+    color: #ffff;
+    font-size: 1.6em;
+}
+
+.alert-container .btn-get-start {
+    background-color: rgba(248, 29, 29, 0.3);
+    color: #ffff;
+    border: 2px solid white;
+    font-size: 1.2em;
+    font-weight: 500;
+    height: 50px;
+    width: 200px;
+    margin-left: 45px;
+    border-radius: 3px;
+}
+
+.alert-container .btn-get-start:hover {
+    background-color: #ffff;
+    color: rgb(0, 188, 213);
+}
+
+.filter-condition .content-3 {
+    font-size: 2em;
+    font-weight: 500;
+    color: rgba(248, 29, 29, 0.897);
+    margin-top: 60px;
+    text-align: center;
+}
+
+.filter-container {
+    width: 70vw;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-condition .filter-heading {
+    text-align: center;
+    margin-left: 20px;
+    width: 280px;
+    height: 180px;
+}
+
+.filter-condition .filter-heading h3 {
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-bottom: 13px;
+}
+
+.filter-condition .filter-heading .filter-heading-list {
+    font-size: .9em;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-condition .filter-heading ol li {
+    margin: 3px;
+}
+
+.filter-condition .filter-heading ol {
+    margin-top: 30px;
+}
+
+.filter-condition .filter-heading a {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: none;
+    color: rgb(0, 188, 213);
+}
+
+.filter-condition .filter-heading a:hover {
+    text-decoration: underline;
+}
+
+.download-app {
+    width: 100%;
+    height: 80px;
+    background-color: #eeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.download-app h2 {
+    font-size: 2em;
+    font-weight: 500;
+    margin-right: 15px;
+    color: rgba(248, 29, 29, 0.897);
+}
+
+.download-app img {
+    width: 100px;
+    height: 35px;
+    margin-right: 15px;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    margin-top: 70px;
+    background-image: url('https://img2.shaadi.com/assests/2018/images/sprite-homepg-v5.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 5px -271px;
+}
+
+.logo-content {
+    font-size: 0.9em;
+    font-weight: 100;
+    line-height: 23px;
+    text-align: center;
+    width: 70vw;
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+.logo-content span a {
+    text-decoration: none;
+    color: rgb(0, 188, 213);
+}
+
+.logo-content span a:hover {
+    text-decoration: underline;
+}
+
+.country-list {
+    margin-top: 50px;
+}
+
+.country-list ol {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.country-list ol li {
+    margin-left: 7px;
+
+}
+
+.country-list ol a {
+    text-decoration: none;
+    color: rgb(0, 188, 213);
+}
+
+.country-list ol a:hover {
+    text-decoration: underline;
+}
+
+.trusted {
+    width: 250px;
+    height: 50px;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    text-align: center;
+    padding: 13px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(0, 188, 213);
+}
+
+.trusted-wrapper {
+    border-top: 1.5px solid grey;
+    border-bottom: 1.5px solid gray;
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.trusted-wrapper .trusted-container {
+    height: 100px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trusted-wrapper .trusted-icon {
+    height: 40px;
+    width: 40px;
+}
+
+.trusted-wrapper .trusted-icon-1 {
+    background-image: url('https://img2.shaadi.com/assests/2018/images/sprite-homepg-v5.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px -332px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+.trusted-wrapper .trusted-icon-2 {
+    background-image: url('https://img2.shaadi.com/assests/2018/images/sprite-homepg-v5.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px -375px;
+}
+
+.trusted-wrapper .trusted-icon-3 {
+    background-image: url('https://img2.shaadi.com/assests/2018/images/sprite-homepg-v5.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -419px;
+}
+
+.footer-list-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-list-container h3 {
+    font-family: 1.2em;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.footer-list-container .footer-list ol {
+    list-style-type: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-list-container .footer-list ol a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
+    font-weight: 400;
+
+    line-height: 20px;
+}
+
+.footer-list-container .footer-list ol a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-list {
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+}
+
+footer {
+    width: 100vw;
+    height: 80px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: grey;
+    margin-top: 50px;
+    background-color: #f1f1f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+footer div {
+    margin-left: 10px;
+    margin-right: 100px;
+}
+
+footer div a {
+    text-decoration: none;
+    color: rgb(0, 188, 213);
+}
+
+footer div a:hover {
+    text-decoration: underline;
+}
+
+.login_wrapper {
+    background-color: red;
+    width: 23.1rem;
+    height: 33.1rem;
+    border-radius: 10px;
+    background-color: #f1f1f2;
+    overflow: hidden;
+    transform: scale(0);
+    position: absolute;
+    top: 8.75rem;
+    left: 35.3rem;
+    transition: transform 0.5s ease;
+    filter: brightness(110%);
+    /* flex-wrap: wrap; */
+
+}
+
+.login_wrapper.active {
+    transform: scale(1);
+    position: fixed;
+    z-index: 10;
+}
+
+.login_wrapper.dark {
+    filter: brightness(110%);
+}
+
+.login_wrapper .close {
+    background-color: rgb(0, 188, 213);
+    width: 2.6rem;
+    height: 1.9rem;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+
+.login_wrapper .close:hover {
+    font-size: 1.7rem;
+    font-weight: 600;
+    background-color: rgb(0, 171, 213);
+}
+
+.login_wrapper .login-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.login_wrapper .login-container .login-logo {
+    height: 2.8rem;
+    width: 2.8rem;
+    margin: auto;
+    margin-top: 1.87rem;
+    background-image: url('https://img2.shaadi.com/assests/2016/images/home-page-layer-logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login_wrapper .login-container h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-top: 1.25rem;
+    padding-bottom: 2.5rem;
+    font-style: normal;
+    text-align: center;
+}
+
+.login_wrapper .login-container label {
+    font-size: 1rem;
+    opacity: 0.5;
+    margin-left: 2.43rem;
+    padding-bottom: 0.3rem;
+}
+
+.login_wrapper .login-container input {
+    height: 1.87rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 0.9rem;
+    border-radius: 0.25rem;
+    outline: none;
+}
+
+.login_wrapper .login-container span input {
+    width: 15px;
+    height: 15px;
+    accent-color: rgba(0, 188, 213, 1);
+    margin-left: 37px;
+}
+
+.login_wrapper .login-container .login-span1 {
+    font-size: 0.8rem;
+    width: 50%;
+}
+
+.login_wrapper .login-container .help-popup {
+    height: 16px;
+    width: 16px;
+    background-image: url('https://img2.shaadi.com/imgs/my-shaadi/ver2/tooltip-icon.gif');
+    background-position: center -94px;
+    background-repeat: repeat;
+    position: absolute;
+    top: 293px;
+    left: 134px;
+
+}
+
+.login_wrapper .login-container .help-popup:hover {
+    background-position: center -125px;
+    cursor: help;
+
+}
+
+.login_wrapper .login-container .login-span2 a {
+    font-size: 0.8rem;
+    position: absolute;
+    top: 292px;
+    left: 225px;
+}
+
+.login_wrapper .login-container .login-span2 a {
+    color: rgb(0, 188, 213);
+    text-decoration: none;
+}
+
+.login_wrapper .login-container .login-span2 a:hover {
+    text-decoration: underline;
+}
+
+.login_wrapper .login-container .login-span3 {
+    text-align: center;
+    opacity: 0.5;
+    font-size: 0.8rem;
+}
+
+.login_wrapper .login-container .login-span4 {
+    text-align: center;
+    margin-top: 2.5rem;
+    opacity: 0.5;
+}
+
+.login_wrapper .login-container .login-span4 a {
+    font-weight: 600;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.login_wrapper .login-container .login-span4 a:hover {
+    background-color: grey;
+    border-radius: 0.6rem;
+}
+
+.login_wrapper .login-container .login-btn {
+    width: 12.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border-radius: 1.25rem;
+    margin: auto;
+}
+
+.login_wrapper .login-container .btn1 {
+    background-color: rgb(0, 188, 213);
+    color: #ffff;
+    margin-top: 1.25rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.2rem;
+    border: none;
+    transition: background-color 0.4s ease;
+}
+
+.login_wrapper .login-container .btn1:hover {
+    background-color: rgb(0, 171, 213);
+
+}
+
+.login_wrapper .login-container .btn2 {
+    background-color: #ffff;
+    margin-top: 0.25rem;
+    display: block;
+    color: rgb(36, 204, 227);
+    border: 1px solid rgb(0, 188, 213);
+    outline: rgb(0, 188, 213);
+    font-size: 1.2rem;
+}
+
+.login_wrapper .login-container .btn2:hover {
+    background-color: rgba(36, 204, 227, 0.1);
+}
+
+.help-container {
+    background-color: white;
+    display: flex;
+    width: 24rem;
+    height: 14rem;
+    border-radius: .5rem;
+    position: absolute;
+    top: 7.5rem;
+    right: 21vw;
+    transform: scale(0);
+    transition: transform 0.5s ease;
+}
+.help-container.active {
+    transform: scale(1);
+}
+.help-container .help-content {
+    font-size: 0.8rem;
+    width: 17rem;
+    line-height: 1rem;
+    padding: 0.8rem;
+}
+
+.help-content h2 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.help-content .help-h3 {
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 0.2rem 0;
+}
+
+.help-content h3:last-of-type {
+    padding-top: 0.4rem;
+}
+
+.help-content .help-h3 a {
+    text-decoration: none;
+}
+
+.help-content .help-h3 a:hover {
+    text-decoration: underline;
+}
+
+.help-content p {
+    font-size: 0.8rem;
+}
+
+.help-container .help-list {
+    border-left: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    width: 7rem;
+    font-size: 0.8rem;
+    line-height: 2rem;
+
+}
+
+.help-container .help-list a {
+    text-decoration: none;
+    border-radius: 0.4rem;
+    text-align: center;
+    color: black;
+    font-weight: 500;
+}
+
+.help-container .help-list a:hover {
+    background-color: grey;
+
+}
+
+@media screen and (max-width:1200px) {
+
+    .head img {
+        padding-left: 8rem;
+    }
+
+    .head .nav-list {
+        position: relative;
+        right: 5rem;
+    }
+
+    .content {
+        position: relative;
+        top: 1rem;
+    }
+
+    .content div {
+        line-height: 3rem;
+    }
+
+    .form {
+        margin-top: 1rem;
+    }
+
+    .login_wrapper.active {
+        position: fixed;
+        left: 26rem;
+    }
+
+    .login_wrapper {
+        position: absolute;
+        left: 26rem;
+    }
+    .help-container {
+        right: 10rem;
+    }
+    .help-container.active {
+        right: 10rem;
+    }
+}
+
+@media screen and (max-width:991px) {
+    html {
+        font-size: 90%;
+    }
+
+    .head img {
+        padding-left: 20rem;
+    }
+
+    .head .nav-list {
+        position: relative;
+        right: 18rem;
+
+    }
+
+    .content {
+        position: relative;
+        top: 1rem;
+
+    }
+
+    .content div {
+        line-height: 4rem;
+    }
+
+    .form {
+        margin-top: 1rem;
+    }
+
+    .login_wrapper.active {
+        position: fixed;
+        left: 21.5rem;
+    }
+
+    .login_wrapper {
+        position: absolute;
+        left: 21.5rem;
+    }
+
+    .login_wrapper .login-container .help-popup {
+        top: 18.2rem;
+    }
+
+    .login_wrapper .login-container .login-span2 a {
+        top: 18.5rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 85%;
+    }
+
+    .head img {
+        padding-left: 26rem;
+    }
+
+    .head .nav-list {
+        position: relative;
+        right: 25rem;
+
+    }
+
+    .content {
+        position: relative;
+        top: 3rem;
+
+    }
+
+    .content div {
+        line-height: 4rem;
+    }
+
+    .form {
+        margin-top: 1rem;
+    }
+
+    .login_wrapper.active {
+        position: fixed;
+        left: 14.5rem;
+    }
+
+    .login_wrapper {
+        position: absolute;
+        left: 14.5rem;
+    }
+    .help-container {
+        top: 19rem;
+    }
+    .help-container.active {
+        top: 9rem;
+        
+    }
+}
+
+@media screen and (max-width:685px) {
+    .content {
+        position: relative;
+        top: 5rem;
+        text-align: center;
+        width: 85%;
+
+    }
+
+    .content div {
+        line-height: 2.5rem;
+    }
+
+    .head img {
+        padding-left: 36rem;
+    }
+
+    .head .nav-list {
+        position: relative;
+        right: 34rem;
+
+    }
+
+    header .content :first-child {
+        font-size: 2rem;
+    }
+
+    header .content :last-child {
+        font-size: 1.4em;
+    }
+
+    .form {
+        width: 80%;
+        height: 100%;
+        margin-top: 1rem;
+    }
+
+    .form select {
+        height: 3rem;
+    }
+
+    .form .btn {
+        height: 3rem;
+        margin-top: 0.8rem;
+    }
+
+    .login_wrapper.active {
+        position: fixed;
+        left: 11rem;
+    }
+
+    .login_wrapper {
+        position: absolute;
+        left: 11rem;
+    }
+    .help-container {
+        top: 9.1rem;
+    }
+    .help-container.active {
+        top: 9.1rem;
+    }
+}
+
+@media screen and (max-width:574px) {
+    html {
+        font-size: 80%;
+    }
+
+    .head img {
+        padding-left: 43rem;
+    }
+
+    .head .nav-list {
+        position: relative;
+        right: 38rem;
+    }
+
+    .content {
+        position: relative;
+        top: 8rem;
+    }
+
+    .content div {
+        line-height: 2rem;
+    }
+
+    .content div {
+        line-height: 2.8rem;
+    }
+
+    .form {
+        margin-top: 1rem;
+        width: 90%;
+    }
+
+    .form select {
+        height: 3rem;
+    }
+
+    .form .btn {
+        height: 3rem;
+        margin-top: 0.8rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        font-size: .6rem;
+        padding-left: 2rem;
+        line-height: 1.5rem;
+    }
+
+    .login_wrapper.active {
+        position: fixed;
+        left: 10rem;
+    }
+
+    .login_wrapper {
+        position: absolute;
+        left: 10rem;
+    }
+}
+
+@media screen and (max-width:486px) {
+    .content {
+        position: relative;
+        top: 5rem;
+    }
+
+    .head img {
+        padding-left: 48rem;
+    }
+
+    .head .nav-list {
+        position: relative;
+        right: 41rem;
+    }
+
+    .head .nav-list a,
+    span {
+        display: block;
+        font-size: 1.5rem;
+        line-height: 2.1rem;
+    }
+    .head .nav-list span {
+        padding-left: -2;
+    }
+    .form {
+        margin-top: 2rem;
+        width: 85vw;
+    }
+    .form select {
+        height: 2.3rem;
+    }
+    .form .btn {
+        height: 2.7rem;
+        margin-top: 0.8rem;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+        font-size: .6rem;
+        padding-left: 2rem;
+        line-height: 1.5rem;
+    }
+    .login_wrapper.active {
+        position: fixed;
+        left: 5rem;
+    }
+    .login_wrapper {
+        height: 66%;
+        position: absolute;
+        left: 5rem;
+    }
+    .login_wrapper .login-container .login-span2 {
+        line-height: 0.9rem;
+    }
+    .login_wrapper .login-container .login-span4 {
+        font-size: 1.2rem;
+    }
+    .help-container {
+        top: 10rem;
+        right: 4rem;
+    }
+    .help-container.active {
+        top: 10rem;
+        right: 4rem;
+    }
+}
+@media screen and (max-width:365px) {
+    html {
+        font-size: 75%;
+    }
+    .head img {
+        padding-left: 52rem;
+    }
+    .head .nav-list {
+        right: 47rem;
+    }
+    .head .nav-list a,
+    span {
+        font-size: 1.7rem;
+    }
+    .content {
+        position: relative;
+        top: 2rem;
+    }
+    .form {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .login_wrapper.active {
+        position: fixed;
+        left: 4.5rem;
+    }
+    .login_wrapper {
+        position: absolute;
+        left: 4.5rem;
+    }
+}
